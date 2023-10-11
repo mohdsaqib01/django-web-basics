@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+    <input type="text" name="username" id="username"
+    placeholder="username"
+    required
+    maxlength="20"
+    size="25"
+    pattern="[A-Za-z0-9]+">
+    <br>
+    <input type="email"
+    name="email"
+    id="email"
+    placeholder="email">
+    <br>
+    <input type="tel"
+    name="phone"
+    id="phone"
+    placeholder="phone"
+    >
+    <br>
+    <input type="date"
+    name="dob"
+    id="dob"
+    >
+    <input type="datetime-local"
+    name="admissiondate"
+    id="admissiomdate"
+    >
+    <br>
+    <input type="file" name="" id="">
+    <input type="checkbox"
+    name="agree"
+    id="agree">
+    agree to our terms and conditions
+    <br>
+    <P>your favourite fruit?</P>
+    <input type="radio" name="ff" id="ff2"
+    value="mango">mango
+    <br>
+    <input type="radio" name="ff" id="ff3"
+    value="pineapple">pineapple
+    <br>
+    <input type="radio"
+    name="ff"
+    id="ff4"
+    value="apple">apple
+    <br>
+    <p>your education</p>
+    <select name="edu" id="edu" >
+        <option value="1">graduate</option>
+        <option value="2">postgraduate</option>
+        <option value="3">doctrate</option>
+        <option value="4">inter</option>
+        
+    </select>
+    <p>rate your skill</p>
+    <input type="range" name="rating" id="rating">
+    <br><input type="hidden" name="secret" id="kuch to raaz h isme">
+    <br>
+    <input type="submit" value="send">
+    </form>
+    
+    
+</body>
+</html>
