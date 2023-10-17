@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            list-style: none;
 
 
         }
@@ -32,23 +33,52 @@
        }
        .nav-list a{
         color: white;
-        text-decoration: none;
+        text-decoration:none;
         font-size: 1.5rem;
        }
        .nav-list a:hover{
         color:black;
        } main{
         min-height: 50vh;
-        background-color: rgb(8, 56, 56);
+       /* background-color: rgb(8, 56, 56);*/
+        width:min(70ch, 90%) ;/*if it is less than 100% than you have to use margin inline :auto*/
+        margin-inline: auto;
+
        }
        .hero-heading{
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: 1.1;
         margin-bottom: 5rem;
         margin-left: 1rem;
         padding-top: 3rem;
 
        }
+       body{
+        width:min(1000px, 100%-4rem) ;
+
+       }
+       .text{
+        font-size: 1.25rem;
+        text-align: justify;
+        margin-bottom: 1.25rem;
+       }
+       .item-list>*{
+        list-style: url(static/images/arrow.png);
+      margin-left: 1.5rem;
+    padding-top: 0.25rem 0;
+font-size: 1.5rem;
+font-weight: bold; }
+.item-list{
+    margin-bottom: 1.5rem;
+}
+footer{
+    background-color: peachpuff;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    color: red;
+    font-weight: bold;
+}
     </style>
 </head>
 <body>
@@ -65,20 +95,25 @@
         <section>
             <article>
                 <h2 class="hero-heading">
-                    <p>today we are going to see the example of css</p></h2>
-                    <ul>
+                    Welcome to the layouts of css
+                </h2>
+                    <p class="text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga asperiores molestias repellendus corrupti in quidem, explicabo reprehenderit nihil praesentium eaque sequi nostrum hic. Inventore est rerum ipsum magnam laudantium delectus pariatur cumque, quos animi, dolorem facilis harum tenetur perferendis voluptatum suscipit asperiores accusantium incidunt possimus provident. Consectetur, laboriosam fugit? Quod dicta, facere at voluptatibus in corporis, qui repellendus aliquid temporibus dolores inventore, vero iure vitae. Numquam odio sapiente fugit iure eos nesciunt, quasi fuga, voluptates aperiam nobis aspernatur perspiciatis! Enim, nam assumenda rem architecto quo optio, aperiam dolorem aliquid natus iusto soluta voluptates ipsa provident error corporis maxime dicta accusantium!today we are going to see the example of css</p>
+                    <ul class="item-list">
                         <li>grids</li>
                         <li>flexbox</li>
                         <li>mixing both together</li>
                     </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magni quia quam debitis quaerat deserunt iure dicta totam aut nemo dolorum cupiditate expedita, aliquam exercitationem recusandae molestiae dignissimos qui error, voluptate laudantium minima sunt veritatis. Repudiandae qui ipsum laudantium, fugiat in nulla nam commodi repellat id deleniti recusandae eveniet cum?</p>
                 
             </article>
         </section>
     </main>
+    
     <footer>
         <p>
             &copy;digipodium 2023-All right reserved
         </p>
+        
     </footer>
     
 </body>
