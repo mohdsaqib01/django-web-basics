@@ -38,7 +38,7 @@
             display: flex;/*for fixing the logo and text in same line*/
             align-items: center;/*for fixing the logo and text in same line*/
             gap: 1rem;
-
+            
             
         }
         .content{
@@ -47,41 +47,96 @@
             gap: 1rem;
             align-items: center;
             height: 80vh;
-    
+            
         }
-        .hero{
-background-color: aqua;
-justify-content: center;
-
+        .hero {
+            /*background-color: aqua;
+            display: grid;
+            justify-items: center;*/
+            flex-wrap: wrap;
+            align-items: center;
+            
         }
-        .col
+        .hero img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 5rem;
+            box-shadow:-10px 5px 60px rgb(57, 57, 159);
+        }
+        .col{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            justify-content: center;
+            
+        }
+        
+        .col h1{
+            font-size: 5rem;
+            font-family: sans-serif;
+            line-height: 1;
+        }
+        .col button{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            padding: 2rem;
+            border-radius: 3rem;
+            background-image: linear-gradient(rgb(208, 18, 50),rgb(134, 33, 134));
+            border: none;
+            width: 230px;
+            text-align: center;
+            
+        }
+        .title-wrapper{
+            flex-grow: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            
+        }
+        .btn-wrapper{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: flex-end;
+        }
     </style>
 </head>
 <body>
     <main>
-        <section> <header><nav>
-            <a href="#" class="nav-link">
-                <img src="static/images/logo1.png" alt="logo" class="logo">
-            Kinectric
-        </a>
-        </nav> 
-        
-    </header> 
-    <div class="content">
-        <div class="col"> 
-        </div>
-        <h1>Always stay connected</h1>
-        <button>Learn moore</button>
-        <div class="col hero"></div>
-        <img src="static/images/image1.png" alt="image1" >
-        
-    </div></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-</main>
-
+        <section> 
+            <header>
+                <nav>
+                    <a href="#" class="nav-link">
+                        <img src="static/images/logo1.png" alt="logo" class="logo">
+                        Kinectric
+                    </a>
+                </nav> 
+                
+            </header> 
+            <div class="content">
+                <div class="col">
+                    
+                    <div class="title-wrapper">
+                        <h1>Always stay connected</h1>
+                    </div>
+                    <div>
+                        <button class="btn-wrapper">Learn More</button>
+                    </div>
+                </div>
+                <div class="col hero">
+                    <img src="static/images/image1.png" alt="image1" >
+                </div>
+            </div>
+            
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+    
 </body>
 </html>
